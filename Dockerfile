@@ -1,4 +1,6 @@
 FROM alpine
+# https://github.com/gucci-on-fleek/slax-docker
+
 COPY ./libslax /root/libslax
 
 RUN \
@@ -37,5 +39,3 @@ RUN \
 
 USER 65534:65534
 ENTRYPOINT [ "/usr/local/bin/slaxproc" ]
-
-

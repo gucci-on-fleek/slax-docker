@@ -1,3 +1,4 @@
+# https://github.com/gucci-on-fleek/slax-docker
 [submodule "libslax"]
 	path = libslax
 	url = https://github.com/Juniper/libslax.git

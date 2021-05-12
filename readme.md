@@ -1,6 +1,8 @@
 Docker Container for `slax`
 ==========================
 
+<!-- https://github.com/gucci-on-fleek/slax-docker -->
+
 This is a simple Docker container containing [`slaxproc`](https://github.com/Juniper/libslax). `libslax` hasn't been meaningfully updated for a few years now, so it's pretty difficult to build on modern systems. This container contains a fully-functional build of `slaxproc` so you can easily run it.
 
 About `slax`
