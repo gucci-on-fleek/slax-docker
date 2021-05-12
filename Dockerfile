@@ -23,6 +23,9 @@ RUN \
     cd libslax ; \
     echo '#define GLOB_BRACE (1 << 10)' >> /usr/include/glob.h ; \
     sed -i '2a #ifndef YYTERROR \n#define YYTERROR YYSYMBOL_YYerror \n#endif' ./libslax/slaxparser-tail.y ; \
+    rm -r tests || true ; \
+    sed -i '/tests/ d' Makefile.am ; \
+    sed -i '/tests.*Makefile/ d' configure.ac ; \
     rm configure || true ; \
     mkdir -p m4 ; \
     autoreconf --install ; \
