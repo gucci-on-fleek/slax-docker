@@ -1,0 +1,4 @@
+[submodule "libslax"]
+	path = libslax
+	url = https://github.com/Juniper/libslax.git
+	shallow = true
