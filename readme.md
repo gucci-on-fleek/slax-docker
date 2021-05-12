@@ -1,5 +1,5 @@
-Docker Container for `slaxproc`
-==============================
+Docker Container for `slax`
+==========================
 
 This is a simple Docker container containing [`slaxproc`](https://github.com/Juniper/libslax). `libslax` hasn't been meaningfully updated for a few years now, so it's pretty difficult to build on modern systems. This container contains a fully-functional build of `slaxproc` so you can easily run it.
 
@@ -68,22 +68,22 @@ main <html> {
 Running
 -------
 ```sh
-docker run -i ghcr.io/gucci-on-fleek/slax-docker [slaxproc arguments]
+docker run -i ghcr.io/gucci-on-fleek/slax [slaxproc arguments]
 ```
 
 ### Convert `slax` to `xslt`
 ```sh
-docker run -i ghcr.io/gucci-on-fleek/slax-docker -x < test.slax > test.xslt
+docker run -i ghcr.io/gucci-on-fleek/slax -x < test.slax > test.xslt
 ```
 
 ### Convert `xslt` to `slax`
 ```sh
-docker run -i ghcr.io/gucci-on-fleek/slax-docker -s < test.xslt > test.slax
+docker run -i ghcr.io/gucci-on-fleek/slax -s < test.xslt > test.slax
 ```
 
 ### Usage
 ```sh
-docker run ghcr.io/gucci-on-fleek/slax-docker --help
+docker run ghcr.io/gucci-on-fleek/slax --help
 ```
 ```text
 Usage: slaxproc [mode] [options] [script] [files]
